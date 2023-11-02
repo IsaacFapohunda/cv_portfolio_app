@@ -8,30 +8,40 @@ class DetailsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Container(
-      color: white,
-      height: size.height*0.3,
-      width: size.width,
-      child:
-      Row(
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Column(
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Isaac Fapohunda'),
-              Text('Mobile App Developer'),
+              Text('Isaac Fapohunda', style: TextStyle(
+                color: black,
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),),
+              SizedBox(height: size.height*0.007,),
+              Text('Mobile App Developer', style: TextStyle(
+                color: grey3,
+                fontSize: 10,
+              ),),
             ],
           ),
+          SizedBox(width: size.width*0.05,),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
                   RichText(
-                    text: const TextSpan(
+                    text: TextSpan(
                         children: [
                           TextSpan(
                             text: 'email: ',
                             style: TextStyle(
-                              color: Colors.black,
+                              color: grey3,
+                              fontSize: 10,
                             ),),
 
                         ]
@@ -43,7 +53,9 @@ class DetailsSection extends StatelessWidget {
                           TextSpan(
                             text: 'isaacfeppy@gmail.com',
                             style: TextStyle(
-                              color: Colors.black,
+                              color: Colors.blue,
+                              fontSize: 10,
+                              decoration: TextDecoration.underline,
                             ),),
 
                         ]
@@ -55,12 +67,13 @@ class DetailsSection extends StatelessWidget {
               Row(
                 children: [
                   RichText(
-                    text: const TextSpan(
+                    text: TextSpan(
                         children: [
                           TextSpan(
                             text: 'LinkedIn: ',
                             style: TextStyle(
-                              color: Colors.black,
+                              color: grey3,
+                              fontSize: 10,
                             ),),
 
                         ]
@@ -72,7 +85,9 @@ class DetailsSection extends StatelessWidget {
                           TextSpan(
                             text: 'https://www.linkedin.com/in/isaac-fapohunda-a28996230',
                             style: TextStyle(
-                              color: Colors.black,
+                              color: Colors.blue,
+                              fontSize: 7,
+                              decoration: TextDecoration.underline,
                             ),),
 
                         ]
@@ -84,12 +99,13 @@ class DetailsSection extends StatelessWidget {
               Row(
                 children: [
                   RichText(
-                    text: const TextSpan(
+                    text: TextSpan(
                         children: [
                           TextSpan(
                             text: 'GitHub: ',
                             style: TextStyle(
-                              color: Colors.black,
+                              color: grey3,
+                              fontSize: 10,
                             ),),
 
                         ]
@@ -101,7 +117,9 @@ class DetailsSection extends StatelessWidget {
                           TextSpan(
                             text: 'https://github.com/IsaacFapohunda',
                             style: TextStyle(
-                              color: Colors.black,
+                              color: Colors.blue,
+                              fontSize: 10,
+                              decoration: TextDecoration.underline,
                             ),),
 
                         ]
@@ -113,12 +131,13 @@ class DetailsSection extends StatelessWidget {
               Row(
                 children: [
                   RichText(
-                    text: const TextSpan(
+                    text: TextSpan(
                         children: [
                           TextSpan(
                             text: 'Contact: ',
                             style: TextStyle(
-                              color: Colors.black,
+                              color: grey3,
+                              fontSize: 10,
                             ),),
 
                         ]
@@ -130,7 +149,9 @@ class DetailsSection extends StatelessWidget {
                           TextSpan(
                             text: '+2349097398422',
                             style: TextStyle(
-                              color: Colors.black,
+                              color: Colors.blue,
+                              fontSize: 10,
+                              decoration: TextDecoration.underline,
                             ),),
 
                         ]

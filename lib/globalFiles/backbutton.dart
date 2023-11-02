@@ -23,7 +23,7 @@ class AppBackButton extends StatelessWidget {
             decoration: BoxDecoration(
               border: Border.all(
                 width: 1.0,
-                color: grey5,
+                color: grey3,
               ),
               shape: BoxShape.circle,
             ),

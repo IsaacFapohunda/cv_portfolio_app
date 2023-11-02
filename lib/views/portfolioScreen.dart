@@ -5,9 +5,12 @@ import 'package:flutter/material.dart';
 
 import '../constants/appColors.dart';
 import '../globalFiles/borderButton.dart';
+import '../models/certifications.dart';
 import '../models/details_section.dart';
 import '../models/education.dart';
 import '../models/experience.dart';
+import '../models/personal_projects.dart';
+import '../models/skills.dart';
 
 class PortfolioScreen extends StatefulWidget {
   const PortfolioScreen({Key? key}) : super(key: key);
@@ -57,15 +60,17 @@ class _PortfolioScreenState extends State<PortfolioScreen> {
     height: size.height*0.75,
               width: size.width,
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   DetailsSection(),
                   Education(),
-                  skills(),
-                  Experience(),
-                Personal_Projects(),
-                  Certifications(),
+                Skills(),
+                Experience(),
+                PersonalProjects(),
+                Certifications(),
                 ],
               )
+
 
 
 

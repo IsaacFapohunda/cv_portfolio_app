@@ -67,9 +67,9 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                     height: 15,
                   ),
                   const Text(
-                    "Welcome, Friend!",
+                    "Welcome, to My Portfolio Friend!",
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 16,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -116,7 +116,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   isLoading
                       ? Center(
                       child: LoadingAnimationWidget.inkDrop(
-                          color: primaryColor, size: 25))
+                          color: appWhite, size: 25))
                       : AppButton(onPressed: (){
                     if (connectivityState.status ==
                         ConnectivityStatus.disconnected) {
@@ -138,8 +138,13 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
 
                   }, label: 'Login', textColor: white),
                   const SizedBox(
-                    height: 15,
+                    height: 5,
                   ),
+
+                  Text("Make sure you're connected to the internet"),
+              const SizedBox(
+              height: 15,
+            ),
                   const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
